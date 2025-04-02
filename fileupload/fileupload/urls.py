@@ -21,6 +21,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/', include('uploader.urls')),
-    path('set-session/', include('uploader.urls')),
-    path('get-session/', include('uploader.urls')),
+    path('set/', include('uploader.urls')),
+    path('get/', include('uploader.urls')),
 ]

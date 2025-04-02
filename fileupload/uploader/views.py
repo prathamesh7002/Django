@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import FileUploadForm
+from django.http import HttpResponse
 
 def upload_file(request):
     if request.method == "POST":
@@ -11,20 +12,15 @@ def upload_file(request):
     return render(request, 'upload.html', {'form': form})
 
 
-def set_session(request):
-    request.session['username'] = 'Prathamesh'
-    return render(request, 'session_set.html')
-
-def get_session(request):
-    username = request.session.get('username', 'Guest')
-    return render(request, 'session_get.html', {'username': username})
-
-from django.shortcuts import render
 
 def set_session(request):
     request.session['username'] = 'Prathamesh'
-    return render(request, 'session_set.html')
+    request.session['user_id'] = 101
+    return HttpResponse("Session Data Set Successfully!")
 
 def get_session(request):
     username = request.session.get('username', 'Guest')
-    return render(request, 'session_get.html', {'username': username})
+    user_id = request.session.get('user_id', 'Unknown')
+    return HttpResponse(f"Username: {username}, User ID: {user_id}")
+
+
