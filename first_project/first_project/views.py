@@ -40,3 +40,20 @@ def submit_user(request):
 def view_users(request):
     users = user.objects.all()  # Fetch all users from the database
     return render(request, 'view.html', {'users': users})
+
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def set_cookie(request):
+    response = HttpResponse("Cookie has been set successfully!")
+    response.set_cookie('username', 'Prathamesh', max_age=3600)  # Cookie expires in 1 hour
+    return response
+
+def get_cookie(request):
+    username = request.COOKIES.get('username', 'Guest')  # Fetch cookie, default 'Guest' if not found
+    return HttpResponse(f"Username from Cookie: {username}")
+
+def delete_cookie(request):
+    response = HttpResponse("Cookie has been deleted successfully!")
+    response.delete_cookie('username')  # Deletes the 'username' cookie
+    return response

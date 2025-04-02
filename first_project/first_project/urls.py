@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from first_project import views
+from .views import set_cookie, get_cookie, delete_cookie
+
 urlpatterns = [
     path('admin/', admin.site.urls), 
     path('hello/', views.hello), 
@@ -26,4 +28,7 @@ urlpatterns = [
     path('signin/', views.signin),
    path('submit-user/', views.submit_user, name='submit_user'),
     path('view/', views.view_users),
+     path('set/', set_cookie),
+    path('get/', get_cookie),
+    path('delete/', delete_cookie),
 ]
