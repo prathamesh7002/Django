@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 0;
+  background-color: #ffaa01e8;
+}
+
+main {
+  position: relative;
+  background-image: url('../images/freepik__upload__99410%20(1).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  filter: brightness(1);
+  opacity: 1;
+  border-radius: 0px;
+  box-shadow: 0px 17px 35px #171a1f3D, 0px 0px 2px #171a1f1F;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 0%;
+  padding-top: 20px;
+}
+
+p {
+  color: #64BE06;
+  text-align: left;
+  padding-top: 130px;
+  padding-left: 190px;
+  font-weight: bolder;
+  font-size: 75px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+p1 {
+  color: #284200;
+  font-size: 60px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 190px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0%;
+  letter-spacing: 10px;
+}
+
+p2 {
+  color: #B23D3F;
+  font-size: 30px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 190px;
+  font-weight: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0%;
+}
+
+.container {
+  position: absolute;
+  top: 29%;
+  left: 65%;
+  width: 342px;
+  height: 391px;
+  background: #F8F9FAFF;
+  border-radius: 10px;
+  box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1F;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it is above other elements */
+}
+
+.container .logo-user {
+  position: absolute; /* Use absolute positioning */
+  top: 20px; /* Adjust the vertical position */
+  left: 50%; /* Center horizontally relative to the container */
+  transform: translateX(-50%); /* Center the logo exactly */
+  text-align: center;
+  height: 50px;
+  width: 60px;
+}
+
+.container select {
+  width: 295px;
+  height: 40px;
+  padding: 10px;
+  padding-left: 35px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #999;
+}
+
+.container select option {
+  color: black;
+}
+
+.container select::placeholder {
+  color: black;
+}
+
+.container button {
+  position: absolute;
+  top: 205px;
+  width: 300px;
+  height: 36px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #FFFFFFFF;
+  background: #636AE8FF;
+  opacity: 1;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Hover */
+.button:hover {
+  color: #FFFFFFFF;
+  background: #4850E4FF;
+}
+
+/* Pressed */
+.button:hover:active {
+  color: #FFFFFFFF;
+  background: #2C35E0FF;
+}
+
+/* Disabled */
+.button:disabled {
+  opacity: 0.4;
+}
+
+.container form {
+  position: absolute;
+  top: 70px;
+  left: 22px;
+  z-index: 11; /* Ensure form is above other elements */
+}
+
+.container .input-container {
+  position: relative;
+  z-index: 12; /* Ensure input container is above other elements */
+}
+
+.container .input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+.container .input-container input {
+  width: 245px;
+  height: 20px;
+  padding: 10px;
+  padding-left: 40px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 13; /* Ensure input is clickable */
+}
+
+.container input::placeholder {
+  color: #999;
+}
+
+.container .options {
+  width: 300px;
+  height: 30px;
+  margin: 0;
+  padding-top: 315px;
+  position: absolute;
+  text-align: left;
+  padding-left: 55px;
+}
+
+.container .options a {
+  color: #007BFF;
+  text-decoration: none;
+  margin-right: 0;
+  padding-right: 70px;
+}
+
+.container .options a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background-color: #ffcc00;
+  text-align: center;
+  left: 0%;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+footer p {
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0%;
+  font-family: 'Lato', sans-serif;
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 8%;
+  padding-top: 1.5%;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  margin: 0%;
+}
+
+footer .contact a {
+  color: #ffffff;
+  padding-left: 15%;
+  padding-top: 0%;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  margin: 0%;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

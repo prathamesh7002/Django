@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Forgot Password</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/for.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Forgot Password</h1>
+        <p>Please enter your email address to reset your password.</p>
+        <form method="POST" action="/reset-password/">
+            {% csrf_token %}
+            <div class="input-container">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <button type="submit">Send Reset Link</button>
+        </form>
+        <div class="options">
+            <a href="/login/">Back to Login</a>
+        </div>
+    </div>    
+</body>
+</html>

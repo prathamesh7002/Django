@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffaa01e8;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  main {
+    position: relative;
+    background-image: url('../images/freepik__upload__99410%20(1).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(1);
+    opacity: 1;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+  }
+  
+  .container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1f;
+    padding: 20px;
+  }
+  
+  .container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #636ae8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .container button:hover {
+    background-color: #4850e4;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }

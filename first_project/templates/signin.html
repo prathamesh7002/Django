@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sig.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form method="POST" action="/signin/">
+            {% csrf_token %}
+            <div class="input-container">
+                <input type="text" name="username" placeholder="Username/Email" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="options">
+            <a href="/forget/">Forgot Password?</a>
+            <a href="/login/">Create an Account</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+@media only screen and (max-width:376px){
+    body {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      padding: 0;
+      background-color: #ffaa01e8;
+    }
+  
+  }
+  @media only screen and (max-width:376px){
+  main {
+    position: relative;
+    background-image: url('../images/freepik__upload__99410%20(1).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    filter: brightness(1);
+    opacity: 1;
+    border-radius: 0px;
+    box-shadow: 0px 17px 35px #171a1f3D, 0px 0px 2px #171a1f1F;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0%;
+    padding-top: 20px;
+    font-size:2rem;
+  }
+  
+  p {
+    color: #64BE06;
+    text-align:left;
+    padding-top: 15%;
+    padding-left: 15%;
+    font-weight: bolder;
+    font-size: 300%;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+  
+  p1 {
+    color: #284200;
+    font-size: 280%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+    letter-spacing: 10px;
+  }
+  
+  p2 {
+    color: #B23D3F;
+    font-size: 120%;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 15%;
+    font-weight: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+  
+  }
+ 
+  .container {
+  
+    position:absolute;
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    height: 48%;
+    background: #F8F9FAFF;
+    /* neutral-150 */
+    border-radius: 3px;
+    /* border-xs */
+    box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1F;
+    /* shadow-l */
+    opacity: 1;
+    border-radius: 10px;
+   display: flex;
+   /* flex-direction: column;
+   justify-content: center;
+   align-items: center; */
+  }
+
+  .container .logo-user {
+    text-align: center;
+    height: 12%;
+    width: 20%;
+    padding-left: 40%;
+  }
+  
+  .container select {
+    width: 88%;
+    height: 35px;
+    padding: 3%;
+    padding-left: 35px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #999;
+  }
+  
+  .container select option {
+    color: black;
+  }
+  
+  .container select::placeholder {
+    color: black;
+  }
+  
+  .container button {
+    /* Button */
+    position: absolute;
+    top: 110%;
+    left: 20px;
+    width: 70%;
+    height: 20%;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #FFFFFFFF;
+    /* white */
+    background: #636AE8FF;
+    /* primary-500 */
+    opacity: 1;
+    border: none;
+    border-radius: 8px;
+    /* border-l */
+  }
+  
+  /* Hover */
+  .button:hover {
+    color: #FFFFFFFF;
+    /* white */
+    background: #4850E4FF;
+    /* primary-550 */
+  }
+  
+  /* Pressed */
+  .button:hover:active {
+    color: #FFFFFFFF;
+    /* white */
+    background: #2C35E0FF;
+    /* primary-600 */
+  }
+  
+  /* Disabled */
+  .button:disabled {
+    opacity: 0.4;
+  }
+  
+  .container form {
+    position: absolute;
+    top: 13%;
+    left: 22px;
+  }
+  
+  .container .input-container {
+    position: relative;
+  
+  }
+  
+  .container .input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    /* Icon color */
+    pointer-events: none;
+  }
+  
+  .container .input-container input {
+    width: 65%;
+    height: 20px;
+    padding: 3%;
+    padding-left: 40px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  
+  }
+  
+  .container input::placeholder {
+    color: #999;
+    /* Placeholder text color */
+  }
+  
+  .container .options {
+    position: absolute;
+    width: 200px;;
+    height: 20px;
+    margin: 0%;
+    padding-top: 120%;
+    padding-left: 13%;
+
+  }
+  
+  .container .options a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 35px;
+    margin-left: 0%;
+    font-size: small;
+  }
+  
+  .container .options a:hover {
+    text-decoration: underline;
+  }
+  footer{
+    position: absolute;
+    display: flex;
+    width: 100%;
+
+    text-align:left;
+    left: 0%;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 0%;
+    padding-left: 0%;
+    flex-direction: column;
+  
+  }
+  footer a{
+     padding-left: 5%;
+    padding-top:2%
+    font-size:1.5rem;
+  }
+  }

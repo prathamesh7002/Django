@@ -1,0 +1,5 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}  <!-- Include CSRF token for security -->      
+    {{ form.as_p }}   <!-- Render the form fields as paragraphs using Django's form helper -->
+    <button type="submit">Upload</button>
+</form>
